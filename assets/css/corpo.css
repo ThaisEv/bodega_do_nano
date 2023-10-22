@@ -11,6 +11,7 @@
     display: grid;
     /*grid-template-columns -> tamanho das colunas, respectivamente*/
     grid-template-columns: 1fr 15rem;
+    background-color: var(--magnolia);
 }
 
 .corpo__meio {
@@ -100,6 +101,7 @@
 }
 
 .botao_layout {
+    width: 150px;
     padding: 8px 10px;
     color: var(--passas-pretas);
     background-color: var(--hunyadi-amarelo);
