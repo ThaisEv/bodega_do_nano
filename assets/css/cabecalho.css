@@ -1,0 +1,75 @@
+/*cores do html*/
+:root {
+    --hunyadi-amarelo: #EDAE49;
+    --passas-pretas: #1E1E24;
+    --magnolia: #F5F0F6;
+    --pimentao-vermelho: #EA2B1F;
+}
+
+.cabecalho {
+    background-color: var(--hunyadi-amarelo);
+    box-shadow: 0 0 10px #11111127;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: 3;
+}
+
+.logo {
+    height: 100px;
+    grid-column: 1;
+    padding: 20px 30px;
+}
+
+/* parte do .cabecalho que está a direita (botão do carrinho)*/
+.cabecalho__dir {
+    grid-column: end;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.botao_carrinho {
+    display: grid;
+    grid-template-columns: .9fr 1.8fr;
+    align-items: center;
+    color: var(--magnolia);
+    font-weight: 500;
+    background-color: var(--pimentao-vermelho);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.icon_carrinho {
+    height: 20px;
+}
+
+/* Responsividade do .cabecalho para mobile 
+obs.: + o botão do menu para mobile*/
+@media only screen and (max-device-width: 525px) {
+    .cabecalho {
+        height: 10rem;
+        align-items: center;
+    }
+    .logo {
+        height: 150px;
+        padding-left: 80px;
+    }
+    .botao_carrinho {
+        font-size: 2rem;
+    }
+    .icon_carrinho {
+        height: 35px;
+    }
+    .cabecalho__dir {
+        grid-template-columns: 1fr 1fr;
+    }
+    .botao_carrinho {
+        padding: 15px 25px;
+    }
+}
+
+
+
+

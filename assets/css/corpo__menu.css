@@ -1,0 +1,155 @@
+:root {
+    --hunyadi-amarelo: #EDAE49;
+    --passas-pretas: #1E1E24;
+    --magnolia: #F5F0F6;
+    --pimentao-vermelho: #EA2B1F;
+}
+
+.corpo__menu {
+    background-color: var(--pimentao-vermelho);
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.menu {
+    display: grid;
+    color: var(--magnolia);
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.menu__topicos {
+    font-size: .9em;
+    padding: 20px 20px 10px;
+    font-weight: 600;
+    color: var(--hunyadi-amarelo);
+}
+
+.menu__icon {
+    height: 20px;
+}
+
+.menu__itens {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2rem;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.menu a{
+    color: var(--magnolia);
+    font-weight: 400;
+}
+
+.menu__itens:hover {
+    background-color: #f5f0f660;
+    cursor: pointer;
+}
+
+.botao__menu_checkbox {
+    display: none;
+}
+
+/*Responsividade para mobile*/
+@media only screen and (max-device-width: 525px) {
+    .corpo {
+        grid-template-columns: 1fr;
+    }
+    .corpo__menu {
+        display: none;
+    }
+    /* Menu para aparelho mobile */
+    .menu_mobile {
+        display: none;
+        background-color: var(--pimentao-vermelho);
+        top: 10rem;
+        position: absolute;
+        color: var(--magnolia);
+        font-weight: 500;
+        padding-top: 30px;
+        font-size: 2rem;
+        padding: 40px 20px;
+    }
+    .menu__icon {
+        height: 35px;
+    }
+    .menu_mobile a {
+        color: var(--magnolia);
+        font-weight: 400;
+    }
+    .menu__itens {
+        padding: 30px 80px;
+    }
+    .botao__menu_checkbox {
+        display: none;
+    }
+    .botao_menu {
+        /*Colocando imagem de fundo, sendo o svg do menu-hambúrguer*/
+        background-image: url(../svg/pb_menu.svg);
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    /* Utilizando o ":checked" do input checkbox para aparecer o menu mobile, quando "apertar"(selecionar) o botão */
+    .botao__menu_checkbox:checked + * {
+        background-color: #c9933c;
+        border-radius: 50%;
+        padding: 8px;
+    }
+    .botao__menu_checkbox:checked ~ .menu_mobile{
+        display: block;
+    }
+}
+
+/*Css do menu para o layout 2*/
+.menu_lyt2 .menu__divis{
+    display: grid;
+    color: var(--magnolia);
+    font-weight: 500;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15rem 15rem;
+}
+
+.menu_lyt2 {
+    display: grid;
+    color: var(--magnolia);
+    font-weight: 500;
+    grid-template-columns: 30rem 15rem 2fr;
+}
+
+.menu_lyt2 a {
+    color: var(--magnolia);
+}
+
+.menu__categ {
+    display: none;
+}
+
+.menu_lyt2 {
+    background-color: transparent;
+}
+
+.menu_lyt2 .menu__topicos:hover {
+    background-color: #f5f0f660;
+}
+
+/* Criando um cascateamento, quando selecionar o item Categoria */
+.menu_lyt2 .menu__topicos:hover + *, .menu__categ:hover {
+    display: block;
+    position: absolute;
+    background-color: #db2a1e;
+    top: 9.5rem;
+    left: 30rem;
+    width: 15rem;
+}
+
+
+.menu_lyt2 .menu__topico {
+    color: var(--magnolia);
+}

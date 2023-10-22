@@ -1,0 +1,80 @@
+/*icon:*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+/*cores do html*/
+:root {
+    --hunyadi-amarelo: #EDAE49;
+    --passas-pretas: #1E1E24;
+    --magnolia: #F5F0F6;
+    --pimentao-vermelho: #EA2B1F;
+    --instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    --facebook: #3b5998;
+    --twitter: #55acee;
+}
+
+/*Rodapé está dividido em três div: logo, contatos e redes sociais, 
+logo display grid com 3 colunas e 1 linha*/
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: var(--passas-pretas);
+    color: var(--magnolia);
+}
+
+.rodape__titulo {
+    padding-bottom: 3px;
+    color: var(--hunyadi-amarelo)
+}
+
+.rodape__empresa__logo {
+    height: 70px;
+    padding-left: 0;
+}
+.rodape__empresa__texto {
+    padding-top: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.rodape__contatos__infos {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    gap: 8px;
+}
+
+.rodape__contatos__icon {
+    font-size: 15px;
+}
+
+.rodape__redes-socias__info__texto {
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.rodape__redes-socias__info__redes {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    align-items: center;
+}
+
+.rodape__redes-sociais__icon {
+    border-radius: 100%;
+    padding: 5px;
+    height: 35px;
+}
+
+.icon__instagram:hover {
+    background: var(--instagram);
+}
+
+.icon__facebook:hover {
+    background-color: var(--facebook);
+}
+
+.icon__twitter:hover {
+    background-color: var(--twitter);
+}

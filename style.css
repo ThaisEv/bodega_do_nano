@@ -1,0 +1,31 @@
+/* links dos css */
+@import url(./assets/css/cabecalho.css);
+@import url(./assets/css/corpo.css);
+@import url(./assets/css/corpo__menu.css);
+@import url(./assets/css/rodape.css);
+
+/* Fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/*Css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--magnolia);
+}
+
+/*definindo cores do html*/
+:root {
+    --hunyadi-amarelo: #EDAE49;
+    --passas-pretas: #1E1E24;
+    --magnolia: #F5F0F6;
+    --pimentao-vermelho: #EA2B1F;
+}
