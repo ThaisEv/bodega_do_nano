@@ -13,7 +13,9 @@
     grid-template-columns: 1fr 15rem;
 }
 
-
+.corpo__meio {
+    display: grid;
+}
 
 .meio__titulo {
     font-size: 1.5rem;
