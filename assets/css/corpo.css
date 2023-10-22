@@ -142,6 +142,7 @@
     display: grid;
     /*grid-template-columns -> tamanho das colunas*/
     grid-template-columns: 1fr;
+    background-color: var(--magnolia);
 }
 
 .corpo_lyt2 .corpo__menu {
